@@ -1,12 +1,12 @@
 namespace mercury;
-
+ 
 using
 {
     cuid,
     managed
 }
 from '@sap/cds/common';
-
+ 
 entity FunctionalLocation : cuid, managed
 {
     key FunclocID : String(50);
@@ -18,7 +18,7 @@ entity FunctionalLocation : cuid, managed
     TechobjectType : String(10);
     equi : Association to many Equipment on equi.floc = $self;
 }
-
+ 
 entity Equipment : cuid, managed
 {
     EquipmentID : String(50);

@@ -5,37 +5,37 @@ annotate service.FunctionalLocation with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'FunclocID',
+                Label : 'Functional Locationa ID',
                 Value : FunclocID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'FunclocDesc',
+                Label : 'Floc Description',
                 Value : FunclocDesc,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'FunclocStructureInd',
+                Label : 'Floc Structure Indicator',
                 Value : FunclocStructureInd,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'FunclocCategory',
+                Label : 'Floc Category',
                 Value : FunclocCategory,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'SupFunclocID',
+                Label : 'Superior Floc ID',
                 Value : SupFunclocID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'SupFunclocLabel',
+                Label : 'Superior Floc Label',
                 Value : SupFunclocLabel,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'TechobjectType',
+                Label : 'Technical object type',
                 Value : TechobjectType,
             },
         ],
@@ -51,27 +51,27 @@ annotate service.FunctionalLocation with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'FunclocID',
+            Label : 'Floc ID',
             Value : FunclocID,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'FunclocDesc',
+            Label : 'Floc Description',
             Value : FunclocDesc,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'FunclocStructureInd',
+            Label : 'Floc Structure Indicator',
             Value : FunclocStructureInd,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'FunclocCategory',
+            Label : 'Floc Category',
             Value : FunclocCategory,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'SupFunclocID',
+            Label : 'Superior Floc ID',
             Value : SupFunclocID,
         },
     ],

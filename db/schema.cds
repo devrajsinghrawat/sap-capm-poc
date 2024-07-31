@@ -13,18 +13,23 @@ using
 }
 from '@sap/cds/common';
 
-entity FLoc : cuid, managed
+entity FunctionalLocation : cuid, managed
 {
-    key FunctionalLocation : String(100);
-    FunctionalLocationName : String(100);
-    FuncLocationStructure : String(100);
-    FunctionalLocationCategory : String(100);
-    SuperiorFunctionalLocation : String(100);
-    SuperiorFuncnlLocLabelName : String(100);
-    TechnicalObjectType : String(100);
+    key FunclocID : String(50);
+    FunclocDesc : String(100);
+    FunclocStructureInd : String(5);
+    FunclocCategory : String(1);
+    SupFunclocID : String(50);
+    SupFunclocLabel : String(50);
+    TechobjectType : String(10);
+    equi : Association to many Equipment on equi.fLoc = $self;
 }
 
-entity Equipment
+entity Equipment : cuid, managed
 {
-    key ID : UUID;
+    EquipmentID : String(50);
+    EquipmentDesc : String(100);
+    EquipmentCategoty : String(1);
+    TechobjectType : String(10);
+    floc : Association to one FunctionalLocation;
 }

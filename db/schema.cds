@@ -22,7 +22,7 @@ entity FunctionalLocation : cuid, managed
     SupFunclocID : String(50);
     SupFunclocLabel : String(50);
     TechobjectType : String(10);
-    equi : Association to many Equipment on equi.fLoc = $self;
+    equi : Association to many Equipment on equi.floc = $self;
 }
 
 entity Equipment : cuid, managed

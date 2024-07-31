@@ -2,14 +2,8 @@ namespace mercury;
 
 using
 {
-    Country,
-    Currency,
-    Language,
-    User,
     cuid,
-    extensible,
-    managed,
-    temporal
+    managed
 }
 from '@sap/cds/common';
 

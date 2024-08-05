@@ -1,0 +1,27 @@
+{
+  "name": "assetconnector",
+  "version": "0.0.1",
+  "description": "An SAP Fiori application.",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "main": "webapp/index.html",
+  "scripts": {
+    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+  },
+  "devDependencies": {
+    "@sap-ux/ui5-middleware-fe-mockserver": "^2.2.7",
+    "@sap/ux-specification": "^1.108.18",
+    "@sap/ux-ui5-tooling": "1.13.2"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ux-ui5-tooling",
+      "@sap-ux/ui5-middleware-fe-mockserver",
+      "ui5-task-zipper",
+      "ui5-tooling-modules"
+    ]
+  }
+}

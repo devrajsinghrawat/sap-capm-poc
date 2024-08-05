@@ -1,2 +1,2 @@
 
-using from './mercuryconnectorui/annotations';
+using from './assetconnector/annotations';

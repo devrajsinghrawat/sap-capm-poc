@@ -30,7 +30,9 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-mercuryconnectorui": "cds watch --open mercuryconnectorui/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-mercuryconnectorui": "cds watch --open mercuryconnectorui/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-connectormodule": "cds watch --open connectormodule/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-assetconnector": "cds watch --open assetconnector/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -48,14 +50,38 @@
         "[production]": {
           "kind": "xsuaa"
         }
+      },
+      "API_EQUIPMENT": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_EQUIPMENT",
+        "credentials": {
+          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_EQUIPMENT",
+          "headers": {
+            "apikey": "oEnTMpSViAMmuOnQRjW1b4TU5aQiTJ8T"
+          }
+        }
+      },
+      "API_FUNCTIONALLOCATION": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_FUNCTIONALLOCATION",
+        "credentials": {
+          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_FUNCTIONALLOCATION",
+          "headers": {
+            "apikey": "oEnTMpSViAMmuOnQRjW1b4TU5aQiTJ8T"
+          }
+        }
+      },
+      "features": {
+        "fetch_csrf": true
       }
     },
-    "features": {
-      "fetch_csrf": true
-    }
+    "lcap": true,
+    "sapux": [
+      "app/mercuryconnectorui"
+    ]
   },
-  "lcap": true,
   "sapux": [
-    "app/mercuryconnectorui"
+    "app/connectormodule",
+    "app/assetconnector"
   ]
 }

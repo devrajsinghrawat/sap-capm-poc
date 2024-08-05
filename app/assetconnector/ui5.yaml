@@ -1,4 +1,4 @@
 specVersion: "2.5"
 metadata:
-  name: mercury.mercuryconnectorui
+  name: assetconnector.assetconnector
 type: application

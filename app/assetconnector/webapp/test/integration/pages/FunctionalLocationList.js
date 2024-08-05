@@ -1,4 +1,4 @@
-sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
+sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
     'use strict';
 
     var CustomPageDefinitions = {
@@ -6,10 +6,10 @@ sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
         assertions: {}
     };
 
-    return new ObjectPage(
+    return new ListReport(
         {
-            appId: 'mercury.mercuryconnectorui',
-            componentId: 'FunctionalLocationObjectPage',
+            appId: 'assetconnector.assetconnector',
+            componentId: 'FunctionalLocationList',
             contextPath: '/FunctionalLocation'
         },
         CustomPageDefinitions

@@ -5,12 +5,12 @@ annotate service.FunctionalLocation with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'Functional Locationa ID',
+                Label : 'Floc ID',
                 Value : FunclocID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'Floc Description',
+                Label : 'Floc description',
                 Value : FunclocDesc,
             },
             {
@@ -25,17 +25,17 @@ annotate service.FunctionalLocation with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'Superior Floc ID',
+                Label : 'Sup Floc ID',
                 Value : SupFunclocID,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'Superior Floc Label',
+                Label : 'Sup Floc Label',
                 Value : SupFunclocLabel,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'Technical object type',
+                Label : 'Tech object Type',
                 Value : TechobjectType,
             },
         ],
@@ -71,7 +71,7 @@ annotate service.FunctionalLocation with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'Superior Floc ID',
+            Label : 'Sup Floc ID',
             Value : SupFunclocID,
         },
     ],

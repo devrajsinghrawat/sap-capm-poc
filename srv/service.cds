@@ -1,6 +1,6 @@
 using { mercury as my } from '../db/schema';
 
-@path : '/service/AssetConnectorSvcs'
+// @path : '/service/AssetConnectorSvcs'
 service mercuryconnectorService
 {
     @odata.draft.enabled
@@ -10,6 +10,12 @@ service mercuryconnectorService
     @odata.draft.enabled
     entity Equipment as
         projection on my.Equipment;
+
+    entity remoteEquip as 
+        projection on my.remoteEquip;    
+
+    entity remoteFuncloc as 
+        projection on my.remoteFuncloc;    
 }
 
 annotate mercuryconnectorService with @requires :

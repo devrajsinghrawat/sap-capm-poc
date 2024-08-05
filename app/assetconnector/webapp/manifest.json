@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "mercury.mercuryconnectorui",
+    "id": "assetconnector.assetconnector",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,11 +13,11 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.13.5",
-      "toolsId": "6c95c525-7dac-4081-b05d-6756c1452e88"
+      "toolsId": "ed038005-4041-470f-af64-5522df751a36"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/service/AssetConnectorSvcs/",
+        "uri": "/odata/v4/mercuryconnector/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -61,7 +61,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "mercury.mercuryconnectorui.i18n.i18n"
+          "bundleName": "assetconnector.assetconnector.i18n.i18n"
         }
       },
       "": {
@@ -93,11 +93,6 @@
           "pattern": "FunctionalLocation({key}):?query:",
           "name": "FunctionalLocationObjectPage",
           "target": "FunctionalLocationObjectPage"
-        },
-        {
-          "pattern": "FunctionalLocation({key})/equi({key2}):?query:",
-          "name": "EquipmentObjectPage",
-          "target": "EquipmentObjectPage"
         }
       ],
       "targets": {
@@ -133,25 +128,7 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/FunctionalLocation",
-              "navigation": {
-                "equi": {
-                  "detail": {
-                    "route": "EquipmentObjectPage"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "EquipmentObjectPage": {
-          "type": "Component",
-          "id": "EquipmentObjectPage",
-          "name": "sap.fe.templates.ObjectPage",
-          "options": {
-            "settings": {
-              "editableHeaderContent": false,
-              "contextPath": "/FunctionalLocation/equi"
+              "contextPath": "/FunctionalLocation"
             }
           }
         }

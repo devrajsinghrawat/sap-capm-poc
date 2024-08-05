@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("mercury.mercuryconnectorui.Component", {
+        return Component.extend("assetconnector.assetconnector.Component", {
             metadata: {
                 manifest: "json"
             }
